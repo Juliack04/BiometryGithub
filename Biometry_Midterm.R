@@ -1,4 +1,6 @@
+
 # Part 1
+
 
 library(readr)
 surveys <- read_csv("~/MyBiometryWork/biometry_course/data/Reef_fish/NCRMP_reef_fish_surveys.csv")
@@ -130,6 +132,7 @@ median(twoc$Rugosity)
 # median is 0.363
 
 
+
 # Part 3
 
 # Sample size of 20
@@ -249,8 +252,6 @@ plot(power.sd ~ sdvec, main = sample_size, ylim = c(0, 1))
 
 mean(pval)
 # mean is 0.04335932, which is significant
-
-
 
 
 
