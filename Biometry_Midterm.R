@@ -71,6 +71,11 @@ plot(log(reef_fish$total_abundance), reef_fish$species_richness,
      xlab = "Log Total Abundance",
      ylab = "Species Richness")
 
+citation("readr")
+citation("dplyr")
+citation("ggplot2")
+
+
 
 # Part 2:
 library(readr)
@@ -252,13 +257,4 @@ plot(power.sd ~ sdvec, main = sample_size, ylim = c(0, 1))
 
 mean(pval)
 # mean is 0.04335932, which is significant
-
-
-
-
-
-
-citation("readr")
-citation("dplyr")
-citation("ggplot2")
 
