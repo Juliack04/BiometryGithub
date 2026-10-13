@@ -173,7 +173,11 @@ for(j in 1:length(sdvec)){
   
 }
 
-plot(power.sd ~ sdvec, main = sample_size, ylim = c(0, 1))
+plot(power.sd ~ sdvec, 
+     main = paste("Power Analysis (N= ",sample_size,")"),
+     xlab = "Standard Deviation",
+     ylab = "Power",
+     ylim = c(0, 1))
 
 mean(pval)
 # mean of the p-values is 0.303871, which is greater than 0.05, so these results
@@ -213,7 +217,11 @@ for(j in 1:length(sdvec)){
   
 }
 
-plot(power.sd ~ sdvec, main = sample_size, ylim = c(0, 1))
+plot(power.sd ~ sdvec, 
+     main = paste("Power Analysis (N= ",sample_size,")"),
+     xlab = "Standard Deviation",
+     ylab = "Power",
+     ylim = c(0, 1))
 
 mean(pval)
 # mean p-value is 0.4272999, which is greater than 0.05 and 0.303871, so it is 
@@ -253,8 +261,13 @@ for(j in 1:length(sdvec)){
   
 }
 
-plot(power.sd ~ sdvec, main = sample_size, ylim = c(0, 1))
+plot(power.sd ~ sdvec, 
+     main = paste("Power Analysis (N= ",sample_size,")"),
+     xlab = "Standard Deviation",
+     ylab = "Power",
+     ylim = c(0, 1))
 
 mean(pval)
-# mean is 0.04335932, which is significant
+# mean is 0.0527404, which is the closest to being significant
+
 
